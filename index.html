@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by 9young</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html>
+<head> 
+   <link rel="stylesheet" href="mystyle.css">
+  </head>
+<body>    
+<h1>Zhu Jianan</h1>
+<h3>In this example, x, y and Z are variables, so that x + y = Z. if x.y is not a significant number, a meaningful error message is returned.</h3>
+<h3>JavaScript allows you to create anonymous functions that must be assigned to a variable.</h3>
+<h3>A function can be assigned to a variable with different name.</h3>
+<h3>A function can return a literal value or another function.</h3>
+
+
+<script>
+function calc() {
+var oper1=document.getElementById("num1");
+var oper2=document.getElementById("num2");
+var o=document.getElementById("operator");
+var op=o.options[o.selectedIndex].value;
+var res;
+switch (op) {
+case "+":
+res=change(oper1.value)+change(oper2.value);
+break;
+}
+     document.getElementById("anw").value=res;
+}
+      
+function change(x) {
+return parseFloat(x);
+}
+      
+</script>
+</head>
+<body>
+<form action="">
+<input type="text" id="num1" placeholder="">
+<select id="operator">
+<option value="+">+</option>
+</select>
+<input type="text" id="num2" placeholder="">
+=
+<input type="text" placeholder="" id="anw">
+<input type="button" value="click" onclick="calc()">
+</form>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
